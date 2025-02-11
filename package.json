@@ -9,13 +9,21 @@
     "@types/node": "^22.13.1",
     "@types/react": "^19.0.8",
     "autoprefixer": "^10.4.20",
+    "css-loader": "^7.1.2",
     "postcss": "^8.5.2",
+    "postcss-loader": "^8.1.1",
+    "style-loader": "^4.0.0",
     "tailwindcss": "^4.0.6",
     "typescript": "^5.7.3"
   },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
-  }
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11"
+  ]
 }
