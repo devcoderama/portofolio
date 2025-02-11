@@ -20,24 +20,62 @@ A modern, responsive personal portfolio website built with Next.js, TypeScript, 
 ## 🏗 Project Structure
 ```
 my-portfolio/
+│
 ├── public/
 │   ├── images/
+│   │   ├── profile.jpg
+│   │   ├── project-1.png
+│   │   └── project-2.png
 │   ├── icons/
+│   │   └── favicon.ico
 │   └── documents/
+│       └── resume.pdf
+│
 ├── src/
 │   ├── components/
 │   │   ├── layout/
+│   │   │   ├── Header.tsx
+│   │   │   ├── Footer.tsx
+│   │   │   └── Navigation.tsx
 │   │   ├── ui/
+│   │   │   ├── Button.tsx
+│   │   │   ├── Card.tsx
+│   │   │   └── SectionTitle.tsx
 │   │   ├── projects/
+│   │   │   ├── ProjectCard.tsx
+│   │   │   └── ProjectList.tsx
 │   │   └── skills/
+│   │       └── SkillItem.tsx
+│   │
 │   ├── pages/
+│   │   ├── _app.tsx
+│   │   ├── _document.tsx
+│   │   ├── index.tsx
+│   │   ├── projects.tsx
+│   │   ├── skills.tsx
+│   │   └── contact.tsx
+│   │
 │   ├── styles/
+│   │   └── globals.css
+│   │
 │   ├── types/
+│   │   ├── Project.ts
+│   │   └── Skill.ts
+│   │
 │   ├── utils/
+│   │   ├── constants.ts
+│   │   └── helpers.ts
+│   │
 │   └── data/
+│       ├── projects.ts
+│       └── skills.ts
+│
 ├── next.config.js
 ├── tailwind.config.js
-└── tsconfig.json
+├── tsconfig.json
+├── package.json
+├── README.md
+└── .gitignore
 ```
 
 ## 🚦 Getting Started
@@ -49,8 +87,8 @@ my-portfolio/
 ### Installation
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/your-portfolio.git
-cd your-portfolio
+git clone https://github.com/devcoderama/portfolio.git
+cd portfolio
 ```
 
 2. Install dependencies
